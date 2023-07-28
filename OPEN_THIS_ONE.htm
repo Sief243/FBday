@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+html {
+  font-size: calc(100vmax / 1500 * 100);
+}
+
+body {
+  height: 100vh;
+  background-color: #e2aa01;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  
+  font-family: "Pacifico", cursive;
+  font-size: clamp(36px, 0.6rem, 100px);
+  color: #fff;
+  text-shadow: 6px 4px #735b13;
+}
+
+[class^=firework-] {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 50%;
+}
+
+.firework-1 {
+  -webkit-animation: firework-lg 1.2s both infinite;
+          animation: firework-lg 1.2s both infinite;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  top: 80%;
+  left: 25%;
+}
+
+.firework-2 {
+  -webkit-animation: firework-md 1.2s both infinite;
+          animation: firework-md 1.2s both infinite;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  top: 65%;
+  left: 60%;
+}
+
+.firework-3 {
+  -webkit-animation: firework-md 1.2s both infinite;
+          animation: firework-md 1.2s both infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  top: 30%;
+  left: 25%;
+}
+
+.firework-4 {
+  -webkit-animation: firework-lg 1.2s both infinite;
+          animation: firework-lg 1.2s both infinite;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  top: 15%;
+  left: 65%;
+}
+
+.firework-5 {
+  -webkit-animation: firework-sm 1.2s both infinite;
+          animation: firework-sm 1.2s both infinite;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  top: 25%;
+  left: 35%;
+}
+
+.firework-6 {
+  -webkit-animation: firework-md 1.2s both infinite;
+          animation: firework-md 1.2s both infinite;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+  top: 60%;
+  left: 35%;
+}
+
+.firework-7 {
+  -webkit-animation: firework-md 1.2s both infinite;
+          animation: firework-md 1.2s both infinite;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  top: 45%;
+  left: 85%;
+}
+
+.firework-8 {
+  -webkit-animation: firework-sm 1.2s both infinite;
+          animation: firework-sm 1.2s both infinite;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  top: 25%;
+  left: 80%;
+}
+
+.firework-9 {
+  -webkit-animation: firework-lg 1.2s both infinite;
+          animation: firework-lg 1.2s both infinite;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  top: 70%;
+  left: 20%;
+}
+
+.firework-10 {
+  -webkit-animation: firework-lg 1.2s both infinite;
+          animation: firework-lg 1.2s both infinite;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  top: 90%;
+  left: 25%;
+}
+
+.firework-11 {
+  -webkit-animation: firework-lg 1.2s both infinite;
+          animation: firework-lg 1.2s both infinite;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  top: 45%;
+  left: 65%;
+}
+
+.firework-12 {
+  -webkit-animation: firework-sm 1.2s both infinite;
+          animation: firework-sm 1.2s both infinite;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  top: 55%;
+  left: 20%;
+}
+
+.firework-13 {
+  -webkit-animation: firework-sm 1.2s both infinite;
+          animation: firework-sm 1.2s both infinite;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  top: 40%;
+  left: 25%;
+}
+
+.firework-14 {
+  -webkit-animation: firework-md 1.2s both infinite;
+          animation: firework-md 1.2s both infinite;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  top: 60%;
+  left: 40%;
+}
+
+.firework-15 {
+  -webkit-animation: firework-lg 1.2s both infinite;
+          animation: firework-lg 1.2s both infinite;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+  top: 55%;
+  left: 15%;
+}
+
+@-webkit-keyframes firework-sm {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 70% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: -0.5rem 0rem 0 #fff, 0.5rem 0rem 0 #fff, 0rem -0.5rem 0 #fff, 0rem 0.5rem 0 #fff, 0.35rem -0.35rem 0 #fff, 0.35rem 0.35rem 0 #fff, -0.35rem -0.35rem 0 #fff, -0.35rem 0.35rem 0 #fff;
+  }
+}
+
+@keyframes firework-sm {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 70% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: -0.5rem 0rem 0 #fff, 0.5rem 0rem 0 #fff, 0rem -0.5rem 0 #fff, 0rem 0.5rem 0 #fff, 0.35rem -0.35rem 0 #fff, 0.35rem 0.35rem 0 #fff, -0.35rem -0.35rem 0 #fff, -0.35rem 0.35rem 0 #fff;
+  }
+}
+@-webkit-keyframes firework-md {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 70% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: -0.7rem 0rem 0 #fff, 0.7rem 0rem 0 #fff, 0rem -0.7rem 0 #fff, 0rem 0.7rem 0 #fff, 0.49rem -0.49rem 0 #fff, 0.49rem 0.49rem 0 #fff, -0.49rem -0.49rem 0 #fff, -0.49rem 0.49rem 0 #fff;
+  }
+}
+@keyframes firework-md {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 70% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: -0.7rem 0rem 0 #fff, 0.7rem 0rem 0 #fff, 0rem -0.7rem 0 #fff, 0rem 0.7rem 0 #fff, 0.49rem -0.49rem 0 #fff, 0.49rem 0.49rem 0 #fff, -0.49rem -0.49rem 0 #fff, -0.49rem 0.49rem 0 #fff;
+  }
+}
+@-webkit-keyframes firework-lg {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 70% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: -0.9rem 0rem 0 #fff, 0.9rem 0rem 0 #fff, 0rem -0.9rem 0 #fff, 0rem 0.9rem 0 #fff, 0.63rem -0.63rem 0 #fff, 0.63rem 0.63rem 0 #fff, -0.63rem -0.63rem 0 #fff, -0.63rem 0.63rem 0 #fff;
+  }
+}
+@keyframes firework-lg {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 70% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: -0.9rem 0rem 0 #fff, 0.9rem 0rem 0 #fff, 0rem -0.9rem 0 #fff, 0rem 0.9rem 0 #fff, 0.63rem -0.63rem 0 #fff, 0.63rem 0.63rem 0 #fff, -0.63rem -0.63rem 0 #fff, -0.63rem 0.63rem 0 #fff;
+  }
+}
+#canvas1{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+} 
+
+
+.original-button {
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #333333;
+  font-size: 18px;
+  border-radius: 0px;
+  width: 40%;
+  margin-right: 6%;
+  height: 40px;
+  font-weight: bold;
+  border: 2px solid #333333;
+  transition: 0.3s;
+  box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
+  background-color: #ffffff;
+  flex-direction: row;
+  position: relative;
+}
+
+.original-button:hover {
+  box-shadow: 0 0 #333;
+  color: #fff;
+  background-color: #333;
+}
+@media(max-width:335px){
+    .title{
+    font-size: 26px;
+  }
+  .original-button{
+    margin-right: 0%;
+    width: 110px;
+  }
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+      <canvas id="canvas1" width="1248" height="551"></canvas>
+<script src="data:text/html;base64,Y29uc3QgY2FudmFzMSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdjYW52YXMxJyk7CmNvbnN0IGN0eCA9IGNhbnZhczEuZ2V0Q29udGV4dCgnMmQnKTsKY2FudmFzMS53aWR0aD0gd2luZG93LmlubmVyV2lkdGg7CmNhbnZhczEuaGVpZ2h0PXRoaXMud2luZG93LmlubmVySGVpZ2h0Owpjb25zdCBwYXJ0aWNsZXNhcnJheT1bXTsKd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoJ3Jlc2l6ZScsZnVuY3Rpb24gKCkgewogICAgY2FudmFzMS53aWR0aD0gd2luZG93LmlubmVyV2lkdGg7CiAgICBjYW52YXMxLmhlaWdodD10aGlzLndpbmRvdy5pbm5lckhlaWdodDsKfSkKY29uc3QgbW91c2U9IHsKICAgIHg6bnVsbCwKICAgIHk6bnVsbAp9CmNhbnZhczEuYWRkRXZlbnRMaXN0ZW5lcignbW91c2Vtb3ZlJyxmdW5jdGlvbihldmVudCl7CiAgICBtb3VzZS54PWV2ZW50Lng7CiAgICBtb3VzZS55PWV2ZW50Lnk7CiAgICBmb3IobGV0IGk9MDtpPDU7aSsrKXsgICAgICAgLy9jaGFuZ2UgaTw1IHRvIGFueSBudW1iZXIgdG8gaW5jIG9yIGRlYyB0aGUgc3BhcmtsZXMgISFETyBOT1QgU0VUIFRIRSBOVU1CRVIgVE9PIEhJR0ggSVQgV0lMTCBIQU5HIFRIRSBCUk9XU0VSCiAgICAgICAgcGFydGljbGVzYXJyYXkucHVzaChuZXcgcGFydGljbGVzKCkpOwogICAgfQp9KQpjbGFzcyBwYXJ0aWNsZXN7CiAgICBjb25zdHJ1Y3RvcigpewogICAgICAgIHRoaXMueD1tb3VzZS54OwogICAgICAgIHRoaXMueT1tb3VzZS55OwogICAgICAgIHRoaXMuc2l6ZSA9IE1hdGgucmFuZG9tKCkqNSsxOwogICAgICAgIHRoaXMuc3BlZWR4PU1hdGgucmFuZG9tKCkqMy0xLjU7CiAgICAgICAgdGhpcy5zcGVlZHk9TWF0aC5yYW5kb20oKSozLTEuNTsKICAgIH0KICAgIHVwZGF0ZSgpewogICAgICAgIHRoaXMueCs9dGhpcy5zcGVlZHg7CiAgICAgICAgdGhpcy55Kz10aGlzLnNwZWVkeTsKICAgICAgICBpZih0aGlzLnNpemU+MCl7CiAgICAgICAgICAgIHRoaXMuc2l6ZS09MC4xOwogICAgICAgIH0KICAgIH0KICAgIGRyYXcoKXsKICAgICAgICBjdHguZmlsbFN0eWxlPSd3aGl0ZSc7CiAgICAgICAgY3R4LmJlZ2luUGF0aCgpOwogICAgICAgIGN0eC5hcmModGhpcy54LHRoaXMueSx0aGlzLnNpemUsMCw2KTsKICAgICAgICBjdHguZmlsbCgpOwogICAgfQp9OwpmdW5jdGlvbiBoYW5kbGVwYXJ0aWNsZXMoKXsKICAgIGZvcihsZXQgaT0wO2k8cGFydGljbGVzYXJyYXkubGVuZ3RoO2krKyl7CiAgICAgICAgcGFydGljbGVzYXJyYXlbaV0udXBkYXRlKCk7CiAgICAgICAgcGFydGljbGVzYXJyYXlbaV0uZHJhdygpOwogICAgICAgIGlmKHBhcnRpY2xlc2FycmF5W2ldLnNpemU8PTAuMSl7CiAgICAgICAgICAgIHBhcnRpY2xlc2FycmF5LnNwbGljZShpLDEpOwogICAgICAgICAgICAtLWk7CiAgICAgICAgfQogICAgfQp9CmZ1bmN0aW9uIGFuaW1hdGUoKXsKICAgIGN0eC5jbGVhclJlY3QoMCwwLGNhbnZhczEud2lkdGgsY2FudmFzMS5oZWlnaHQpOwogICAgaGFuZGxlcGFydGljbGVzKCk7CiAgICByZXF1ZXN0QW5pbWF0aW9uRnJhbWUoYW5pbWF0ZSk7Cn0KYW5pbWF0ZSgpOw=="></script>
+
+  <div class="firework-1"></div>
+<div class="firework-2"></div>
+<div class="firework-3"></div>
+<div class="firework-4"></div>
+<div class="firework-5"></div>
+<div class="firework-6"></div>
+<div class="firework-7"></div>
+<div class="firework-8"></div>
+<div class="firework-9"></div>
+<div class="firework-10"></div>
+<div class="firework-11"></div>
+<div class="firework-12"></div>
+<div class="firework-13"></div>
+<div class="firework-14"></div>
+<div class="firework-15"></div>
+<div>
+<div class="title"  >happy bday fasil 🎉!</div>
+<a target="_blank" href="cake/a.htm"class="cake original-button" target="_blank">cake🎂?</a>
+<a target="_blank" href="https://cysj2-global-web.hortorinteractive.com/app/?p=eyJtb2RlIjoiMSIsImdhbWVJZCI6IkdEOjQ1MDEwOjQ3Iiwicm9sZUlkIjoiMTA0NDg2OSJ9&tap=1"class="original-button">your game :]</a>
+</div>
+    <script src="CodePen%20-%20css%20fireworks%20with%20box-shadow_files/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd3025033.js"></script>
+      <script id="rendered-js">
+// pure css!
+//# sourceURL=pen.js
+    </script>
+
+  
+
+
+</body></html>
